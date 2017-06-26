@@ -1,0 +1,73 @@
+Testsuite: controledeponto.SalarioServiceSpec
+Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0,499 sec
+------------- Standard Output ---------------
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[0]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[1]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[2]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[3]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[4]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[5]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[0]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[1]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[2]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[3]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[4]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[5]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[0]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[1]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[2]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5]--
+--Output from teste data de inicio do relatorio mensal[0]--
+--Output from teste data de inicio do relatorio mensal[1]--
+--Output from teste data final do relatorio mensal[0]--
+--Output from teste data final do relatorio mensal[1]--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[0]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[1]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[2]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[3]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[4]--
+--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[5]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[0]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[1]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[2]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[3]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[4]--
+--Output from teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[5]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[0]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[1]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[2]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4]--
+--Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5]--
+--Output from teste data de inicio do relatorio mensal[0]--
+--Output from teste data de inicio do relatorio mensal[1]--
+--Output from teste data final do relatorio mensal[0]--
+--Output from teste data final do relatorio mensal[1]--
+------------- ---------------- ---------------
+
+Testcase: teste valor salário do dia em dias uteis com bonus de horas extras comum[0] took 0,134 sec
+Testcase: teste valor salário do dia em dias uteis com bonus de horas extras comum[1] took 0,013 sec
+Testcase: teste valor salário do dia em dias uteis com bonus de horas extras comum[2] took 0,014 sec
+Testcase: teste valor salário do dia em dias uteis com bonus de horas extras comum[3] took 0,012 sec
+Testcase: teste valor salário do dia em dias uteis com bonus de horas extras comum[4] took 0,012 sec
+Testcase: teste valor salário do dia em dias uteis com bonus de horas extras comum[5] took 0,013 sec
+Testcase: teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[0] took 0,018 sec
+Testcase: teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[1] took 0,013 sec
+Testcase: teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[2] took 0,013 sec
+Testcase: teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[3] took 0,016 sec
+Testcase: teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[4] took 0,012 sec
+Testcase: teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[5] took 0,011 sec
+Testcase: teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[0] took 0,011 sec
+Testcase: teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[1] took 0,01 sec
+Testcase: teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[2] took 0,011 sec
+Testcase: teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3] took 0,013 sec
+Testcase: teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4] took 0,008 sec
+Testcase: teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5] took 0,009 sec
+Testcase: teste data de inicio do relatorio mensal[0] took 0,078 sec
+Testcase: teste data de inicio do relatorio mensal[1] took 0,014 sec
+Testcase: teste data final do relatorio mensal[0] took 0,023 sec
+Testcase: teste data final do relatorio mensal[1] took 0,019 sec

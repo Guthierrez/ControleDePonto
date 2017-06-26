@@ -1,0 +1,57 @@
+Testsuite: controledeponto.SaldoHorasServiceSpec
+Tests run: 16, Failures: 0, Errors: 0, Time elapsed: 0,69 sec
+------------- Standard Output ---------------
+--Output from teste geração registro diário de saldo de horas do funcionário--
+PT0S
+PT0S
+--Output from teste número horas trabalhadas no dia[0]--
+--Output from teste número horas trabalhadas no dia[1]--
+--Output from teste número horas trabalhadas no dia[2]--
+--Output from teste número horas trabalhadas no dia[3]--
+--Output from teste número horas trabalhadas no dia[4]--
+--Output from teste quantidade de horas esperadas para um determinado dia[0]--
+--Output from teste quantidade de horas esperadas para um determinado dia[1]--
+--Output from teste quantidade de horas esperadas para um determinado dia[2]--
+--Output from teste quantidade de horas esperadas para um feriado (simulando ser hoje)--
+--Output from teste se um determinado dia é um dia útil[0]--
+--Output from teste se um determinado dia é um dia útil[1]--
+--Output from teste se um determinado dia é um dia útil[2]--
+--Output from teste calculo número de datas entre periodo[0]--
+--Output from teste calculo número de datas entre periodo[1]--
+--Output from teste calculo número de datas entre periodo[2]--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from teste geração registro diário de saldo de horas do funcionário--
+--Output from teste número horas trabalhadas no dia[0]--
+--Output from teste número horas trabalhadas no dia[1]--
+--Output from teste número horas trabalhadas no dia[2]--
+--Output from teste número horas trabalhadas no dia[3]--
+--Output from teste número horas trabalhadas no dia[4]--
+--Output from teste quantidade de horas esperadas para um determinado dia[0]--
+--Output from teste quantidade de horas esperadas para um determinado dia[1]--
+--Output from teste quantidade de horas esperadas para um determinado dia[2]--
+--Output from teste quantidade de horas esperadas para um feriado (simulando ser hoje)--
+--Output from teste se um determinado dia é um dia útil[0]--
+--Output from teste se um determinado dia é um dia útil[1]--
+--Output from teste se um determinado dia é um dia útil[2]--
+--Output from teste calculo número de datas entre periodo[0]--
+--Output from teste calculo número de datas entre periodo[1]--
+--Output from teste calculo número de datas entre periodo[2]--
+------------- ---------------- ---------------
+
+Testcase: teste geração registro diário de saldo de horas do funcionário took 0,191 sec
+Testcase: teste número horas trabalhadas no dia[0] took 0,023 sec
+Testcase: teste número horas trabalhadas no dia[1] took 0,025 sec
+Testcase: teste número horas trabalhadas no dia[2] took 0,025 sec
+Testcase: teste número horas trabalhadas no dia[3] took 0,026 sec
+Testcase: teste número horas trabalhadas no dia[4] took 0,026 sec
+Testcase: teste quantidade de horas esperadas para um determinado dia[0] took 0,067 sec
+Testcase: teste quantidade de horas esperadas para um determinado dia[1] took 0,048 sec
+Testcase: teste quantidade de horas esperadas para um determinado dia[2] took 0,04 sec
+Testcase: teste quantidade de horas esperadas para um feriado (simulando ser hoje) took 0,035 sec
+Testcase: teste se um determinado dia é um dia útil[0] took 0,039 sec
+Testcase: teste se um determinado dia é um dia útil[1] took 0,028 sec
+Testcase: teste se um determinado dia é um dia útil[2] took 0,027 sec
+Testcase: teste calculo número de datas entre periodo[0] took 0,034 sec
+Testcase: teste calculo número de datas entre periodo[1] took 0,016 sec
+Testcase: teste calculo número de datas entre periodo[2] took 0,02 sec

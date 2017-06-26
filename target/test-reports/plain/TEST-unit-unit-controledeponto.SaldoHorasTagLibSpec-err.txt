@@ -1,0 +1,13 @@
+--Output from teste conversão de horas em valor decimal para minutos e segundos[0]--
+--Output from teste conversão de horas em valor decimal para minutos e segundos[1]--
+--Output from teste conversão de horas em valor decimal para minutos e segundos[2]--
+--Output from teste conversão de horas em valor decimal para minutos e segundos[3]--
+--Output from teste conversão de horas em valor decimal para minutos e segundos[4]--
+--Output from teste conversão de horas em valor decimal para minutos e segundos[5]--
+--Output from teste conversão de horas em valor decimal para minutos e segundos[6]--
+--Output from teste saldo horas em intervalo decimal para minutos e segundos[0]--
+--Output from teste saldo horas em intervalo decimal para minutos e segundos[1]--
+--Output from teste saldo horas em intervalo decimal para minutos e segundos[2]--
+--Output from teste saldo horas em intervalo decimal para minutos e segundos[3]--
+--Output from teste saldo horas em intervalo decimal para minutos e segundos[4]--
+--Output from teste saldo horas em intervalo decimal para minutos e segundos[5]--

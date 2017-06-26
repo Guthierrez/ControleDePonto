@@ -1,0 +1,3 @@
+--Output from teste cadastro ponto funcionario--
+--Output from teste registro ponto menor que ultimo ponto cadastrado--
+--Output from teste busca de pontos por funcionario e periodo--
