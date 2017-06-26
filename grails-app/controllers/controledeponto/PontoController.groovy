@@ -23,8 +23,12 @@ class PontoController {
         Funcionario funcionario = Funcionario.findByCpf(cpf)
         Date horario = new Date()
         if(funcionario){
-            Ponto ponto = pontoService.criarPontoParaFuncionario(horario, funcionario)
-            render(status: 201, text: "Ponto registrado para ${ponto.funcionario.nome} ás ${ponto.horario.format('HH:mm')}")
+            try{
+                Ponto ponto = pontoService.criarPontoParaFuncionario(horario, funcionario)
+                render(status: 201, text: "Ponto registrado para ${ponto.funcionario.nome} ás ${ponto.horario.format('HH:mm')}")
+            }catch (Exception e){
+                render(status: 400, text: e.getMessage())
+            }
         }else{
             render(status: 400, text: 'Funcionário não encontrado!')
         }

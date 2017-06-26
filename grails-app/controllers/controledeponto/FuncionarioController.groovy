@@ -18,7 +18,8 @@ class FuncionarioController {
     }
 
     def create() {
-        respond new Funcionario(params)
+        Funcionario funcionarioInstance = new Funcionario(params)
+        respond funcionarioInstance
     }
 
     @Transactional
