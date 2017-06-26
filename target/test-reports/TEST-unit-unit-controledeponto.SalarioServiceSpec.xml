@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="guthierrezsouza" name="controledeponto.SalarioServiceSpec" tests="22" time="0.499" timestamp="2017-06-26T15:08:17">
+<testsuite errors="0" failures="0" hostname="guthierrezsouza" name="controledeponto.SalarioServiceSpec" tests="26" time="3.162" timestamp="2017-06-26T20:13:00">
   <properties />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[0]" time="0.134" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[1]" time="0.013" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[2]" time="0.014" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[3]" time="0.012" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[4]" time="0.012" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[5]" time="0.013" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[0]" time="0.018" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[1]" time="0.013" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[2]" time="0.013" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[3]" time="0.016" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[4]" time="0.012" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[5]" time="0.011" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[0]" time="0.011" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[1]" time="0.01" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[2]" time="0.01" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3]" time="0.013" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4]" time="0.008" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5]" time="0.009" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste data de inicio do relatorio mensal[0]" time="0.078" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste data de inicio do relatorio mensal[1]" time="0.014" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[0]" time="1.836" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[1]" time="0.032" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[2]" time="0.024" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[3]" time="0.025" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[4]" time="0.028" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário do dia em dias uteis com bonus de horas extras comum[5]" time="0.028" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[0]" time="0.051" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[1]" time="0.049" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[2]" time="0.042" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[3]" time="0.019" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[4]" time="0.018" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados (dias nao uteis) com bonus de hora dobrada[5]" time="0.018" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[0]" time="0.02" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[1]" time="0.039" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[2]" time="0.043" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3]" time="0.07" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4]" time="0.045" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5]" time="0.03" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[0]" time="0.015" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[1]" time="0.014" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[2]" time="0.013" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[3]" time="0.021" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste data de inicio do relatorio mensal[0]" time="0.531" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste data de inicio do relatorio mensal[1]" time="0.018" />
   <testcase classname="controledeponto.SalarioServiceSpec" name="teste data final do relatorio mensal[0]" time="0.023" />
-  <testcase classname="controledeponto.SalarioServiceSpec" name="teste data final do relatorio mensal[1]" time="0.019" />
+  <testcase classname="controledeponto.SalarioServiceSpec" name="teste data final do relatorio mensal[1]" time="0.018" />
   <system-out><![CDATA[--Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[0]--
 --Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[1]--
 --Output from teste valor salário do dia em dias uteis com bonus de horas extras comum[2]--
@@ -41,6 +45,10 @@
 --Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3]--
 --Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4]--
 --Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[0]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[1]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[2]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[3]--
 --Output from teste data de inicio do relatorio mensal[0]--
 --Output from teste data de inicio do relatorio mensal[1]--
 --Output from teste data final do relatorio mensal[0]--
@@ -64,6 +72,10 @@
 --Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[3]--
 --Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[4]--
 --Output from teste valor salário em dias uteis com bonus de hora extra comum e adicional noturno[5]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[0]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[1]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[2]--
+--Output from teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno[3]--
 --Output from teste data de inicio do relatorio mensal[0]--
 --Output from teste data de inicio do relatorio mensal[1]--
 --Output from teste data final do relatorio mensal[0]--

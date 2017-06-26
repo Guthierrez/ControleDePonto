@@ -39,7 +39,7 @@
 					<g:message code="saldoHoras.funcionario.label" default="Funcionário" />
 					<span class="required-indicator">*</span>
 				</label>
-				<g:select id="id" name="id" from="${funcionarios}" optionKey="id" required="" value="${id}"/>
+				<g:select id="id" name="id" from="${funcionarios}" optionKey="id" required="" value="${funcionario?.id}"/>
 			</div>
 		</sec:ifAllGranted>
     </fieldset>

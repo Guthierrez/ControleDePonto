@@ -8,7 +8,12 @@ class SaldoHorasController {
 	def springSecurityService
 
     def index() {
-        return [funcionarios : Funcionario.findAll()]
+		Funcionario funcionario = null
+		if(springSecurityService.getCurrentUser().getAuthorities().any {it.authority == "ROLE_FUNCIONARIO"}){
+			String cpf = springSecurityService.getCurrentUser()?.cpf
+			funcionario = Funcionario.findByCpf(cpf)
+		}
+        return [funcionarios : Funcionario.findAll(), funcionario: funcionario]
     }
 
     def show(){

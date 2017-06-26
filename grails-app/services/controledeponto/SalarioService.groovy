@@ -41,33 +41,38 @@ class SalarioService {
 	}
 
 	BigDecimal getSalarioDiasUteis(BigDecimal valorHora, RegistroDiario registroDiario){
-		def (salarioDoDia, horasNoturnaExtra, horasNoturnaComum, horasExtraComum, horasComum)  = [0.0, 0.0, 0.0, 0.0, 0.0];
-		BigDecimal horaExtraTotal = registroDiario.horasTrabalhadas - registroDiario.horasEsperadas
-		BigDecimal horasNoturnasTotal = registroDiario.horasNoturnas
+		def (salarioDoDia, horasNoturnasExtras, horasNoturnasComuns, horasExtrasComuns, horasComuns)  = [0.0, 0.0, 0.0, 0.0, 0.0]
+		BigDecimal horaExtrasTotais = registroDiario.horasTrabalhadas - registroDiario.horasEsperadas
+		BigDecimal horasNoturnasTotais = registroDiario.horasNoturnas
 
-		if(horaExtraTotal > 0){
-			if(registroDiario.horasNoturnas > horaExtraTotal){
-				horasNoturnaExtra = horaExtraTotal
+		if(horaExtrasTotais > 0){
+			if(registroDiario.horasNoturnas > horaExtrasTotais){
+				horasNoturnasExtras = horaExtrasTotais
 			}else{
-				horasNoturnaExtra = registroDiario.horasNoturnas
-				horasExtraComum = horaExtraTotal - registroDiario.horasNoturnas
+				horasNoturnasExtras = registroDiario.horasNoturnas
+				horasExtrasComuns = horaExtrasTotais - registroDiario.horasNoturnas
 			}
 		}
-		horasNoturnaComum = horasNoturnasTotal - horasNoturnaExtra
-		horasComum = registroDiario.horasTrabalhadas - horasExtraComum - horasNoturnaExtra - horasNoturnaComum
+		horasNoturnasComuns = horasNoturnasTotais - horasNoturnasExtras
+		horasComuns = registroDiario.horasTrabalhadas - horasExtrasComuns - horasNoturnasExtras - horasNoturnasComuns
 
-		salarioDoDia += valorHora * BONUS_HORA_NOTURNA * BONUS_HORA_EXTRA_COMUM * horasNoturnaExtra
-		salarioDoDia += valorHora * BONUS_HORA_EXTRA_COMUM * horasExtraComum
-		salarioDoDia += valorHora * BONUS_HORA_NOTURNA * horasNoturnaComum
-		salarioDoDia += valorHora * horasComum
+		salarioDoDia += valorHora * BONUS_HORA_NOTURNA * BONUS_HORA_EXTRA_COMUM * horasNoturnasExtras
+		salarioDoDia += valorHora * BONUS_HORA_EXTRA_COMUM * horasExtrasComuns
+		salarioDoDia += valorHora * BONUS_HORA_NOTURNA * horasNoturnasComuns
+		salarioDoDia += valorHora * horasComuns
 		return salarioDoDia
 	}
 
 	BigDecimal getSalarioDiaDomingosFeriados(BigDecimal valorHora, RegistroDiario registroDiario){
+		BigDecimal salarioDia = 0.0
+		BigDecimal horasComuns = registroDiario.horasTrabalhadas
 		if(registroDiario.horasNoturnas > 0){
-			valorHora *= BONUS_HORA_NOTURNA
+			horasComuns = horasComuns - registroDiario.horasNoturnas
 		}
-		return registroDiario.horasTrabalhadas * valorHora * BONUS_HORA_FERIADO
+		salarioDia += valorHora * BONUS_HORA_NOTURNA * BONUS_HORA_FERIADO * registroDiario.horasNoturnas
+		salarioDia += valorHora * BONUS_HORA_FERIADO * horasComuns
+
+		return salarioDia
 	}
 
 	Date getDataInicioRelatorioMensal(Date mes){

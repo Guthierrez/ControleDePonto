@@ -22,12 +22,15 @@
 		<br>
 		<b>CPF:</b> ${funcionario.cpf}
 		<br>
-		<b>Horas Esperadas no período:</b> ${saldoTotalHoras.totalEsperadoPeriodo.intValue()} horas
+		<b>Salário Base:</b> <g:formatNumber number="${funcionario.salario}" type="currency" currencyCode="BRL" />
 		<br>
-		<b>Horas Trabalhadas no período:</b> ${saldoTotalHoras.totalTrabalhadoPeriodo.intValue()} horas e ${(saldoTotalHoras.totalTrabalhadoPeriodo.remainder(1) * 60).intValue()} minutos
+		<b>Horas Esperadas no período:</b> <saldoHoras:bigDecimalToHoras quantidadeHoras="${saldoTotalHoras.totalEsperadoPeriodo}"/>
 		<br>
-		<g:set var="saldo" value="${saldoTotalHoras.totalTrabalhadoPeriodo - saldoTotalHoras.totalEsperadoPeriodo}"></g:set>
-		<b>Saldo de Horas final no Período:</b> ${saldo.intValue()} horas e ${(saldo.remainder(1) * 60).intValue()} minutos
+		<b>Horas Trabalhadas no período:</b> <saldoHoras:bigDecimalToHoras quantidadeHoras="${saldoTotalHoras.totalTrabalhadoPeriodo}"/>
+		<br>
+		<b>Saldo de Horas final no Período:</b> <saldoHoras:bigDecimalIntervalToHoras
+			horasEsperadas="${saldoTotalHoras.totalEsperadoPeriodo}"
+			horasTrabalhadas="${saldoTotalHoras.totalTrabalhadoPeriodo}"/>
 		<br><br>
 	</div>
 	<span style="margin-left: 5px;"><b>Pontos Registrados no Período</b></span>

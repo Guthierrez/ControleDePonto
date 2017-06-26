@@ -1,7 +1,5 @@
 package controledeponto
 
-
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -35,7 +33,7 @@ class FuncionarioController {
             return
         }
 
-        funcionarioInstance.save flush:true
+        funcionarioInstance.save flush: true
 
         request.withFormat {
             form multipartForm {

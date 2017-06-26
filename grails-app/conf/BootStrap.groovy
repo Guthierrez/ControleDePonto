@@ -3,7 +3,10 @@ import controledeponto.DiaSemana
 import controledeponto.FechamentoMes
 import controledeponto.Funcionario
 import controledeponto.Papel
+import controledeponto.Ponto
 import controledeponto.Usuario
+import org.joda.time.LocalDate
+import org.joda.time.LocalDateTime
 
 class BootStrap {
 
@@ -25,6 +28,17 @@ class BootStrap {
 			funcionario.addToPapeis(papelFuncionario)
 
 			funcionario.save()
+
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 26, 8, 0, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 26, 16, 0, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 27, 3, 30, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 27, 23, 45, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 28, 8, 0, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 28, 18, 0, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 29, 8, 0, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 29, 14, 0, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 30, 8, 15, 0).toDate())
+			Ponto.findOrSaveByFuncionarioAndHorario(funcionario, new LocalDateTime(2017, 6, 30, 16, 30, 0).toDate())
 		}
 
 		if (!Usuario.findByUsername('maquina')) {
@@ -32,6 +46,13 @@ class BootStrap {
 
 			maquina.addToPapeis(papelMaquina)
 			maquina.save()
+		}
+
+		if(!Usuario.findByUsername('fulano')){
+			Funcionario funcionario = new Funcionario(username: 'fulano', password: 'fulano', cargaHorariaMensal: 200, salario: 2000, nome: "Fulano", cpf: "12345678910").save()
+			funcionario.addToPapeis(papelFuncionario)
+
+			funcionario.save()
 		}
 
 		FechamentoMes.findOrSaveByDataFechamento(25);

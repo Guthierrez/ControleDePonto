@@ -1,17 +1,26 @@
 package controledeponto
 
+import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper
+
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class RequisicaoPontoController {
     def requisicaoPontoService
+    def springSecurityService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond RequisicaoPonto.list(params), model:[requisicaoPontoInstanceCount: RequisicaoPonto.count()]
+        if(springSecurityService.getCurrentUser().getAuthorities().any {it.authority == "ROLE_FUNCIONARIO"}){
+            String cpf = springSecurityService.getCurrentUser()?.cpf
+            Funcionario funcionario = Funcionario.findByCpf(cpf)
+            respond RequisicaoPonto.findAllByFuncionario(funcionario)
+        }else{
+            params.max = Math.min(max ?: 10, 100)
+            respond RequisicaoPonto.list(params), model:[requisicaoPontoInstanceCount: RequisicaoPonto.count()]
+        }
     }
 
     def show(RequisicaoPonto requisicaoPontoInstance) {
@@ -26,7 +35,9 @@ class RequisicaoPontoController {
     }
 
     def create() {
-        respond new RequisicaoPonto(params)
+        String cpf = springSecurityService.getCurrentUser().cpf
+        Funcionario funcionario = Funcionario.findByCpf(cpf)
+        respond new RequisicaoPonto(funcionario: funcionario, statusRequisicao: params.statusRequisicao, hora: params.hora, justificativa: params.justificativa, id: params.id)
     }
 
     @Transactional

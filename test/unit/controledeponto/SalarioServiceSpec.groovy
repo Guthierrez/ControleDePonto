@@ -71,6 +71,23 @@ class SalarioServiceSpec extends Specification {
 		10        | 0                | 8              | 0             | 0
 	}
 
+	@Unroll
+	void "teste valor salário em domingos e feriados com bonus de hora extra dobrado e adicional noturno"(){
+		when:
+		RegistroDiario registroDiario = new RegistroDiario(horasTrabalhadas: horasTrabalhadas, horasEsperadas: 0, horasNoturnas: horasNoturnas, diaUtil: false)
+		BigDecimal salario = service.getSalarioDia(valorHora, registroDiario)
+
+		then:
+		salario == salarioEsperado
+
+		where:
+		valorHora | horasTrabalhadas | horasNoturnas | salarioEsperado
+		10        | 8                | 8             | 192
+		10        | 2                | 1             | 44
+		10        | 0                | 0             | 0
+		10        | 2                | 0             | 40
+	}
+
 
 	@Unroll
     void "teste data de inicio do relatorio mensal"() {

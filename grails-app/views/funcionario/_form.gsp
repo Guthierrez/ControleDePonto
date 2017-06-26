@@ -1,7 +1,5 @@
 <%@ page import="controledeponto.Funcionario" %>
 
-
-
 <div class="fieldcontain ${hasErrors(bean: funcionarioInstance, field: 'nome', 'error')} required">
 	<label for="nome">
 		<g:message code="funcionario.nome.label" default="Nome" />

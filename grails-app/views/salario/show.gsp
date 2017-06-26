@@ -21,6 +21,8 @@
 		<br>
 		<b>CPF:</b> ${funcionario.cpf}
 		<br>
+		<b>Salário Base:</b> <g:formatNumber number="${funcionario.salario}" type="currency" currencyCode="BRL" />
+		<br>
 		<b>Horas Esperadas no período:</b> <saldoHoras:bigDecimalToHoras quantidadeHoras="${saldoTotalHoras.totalEsperadoPeriodo}"/>
 		<br>
 		<b>Horas Trabalhadas no período:</b> <saldoHoras:bigDecimalToHoras quantidadeHoras="${saldoTotalHoras.totalTrabalhadoPeriodo}"/>
@@ -29,7 +31,7 @@
 			horasEsperadas="${saldoTotalHoras.totalEsperadoPeriodo}"
 			horasTrabalhadas="${saldoTotalHoras.totalTrabalhadoPeriodo}"/>
 		<br>
-		<b>Remuneração no período:</b> <g:formatNumber number="${salario}" type="currency" currencyCode="BRL" />
+		<b>Remuneração final no período:</b> <g:formatNumber number="${salario}" type="currency" currencyCode="BRL" />
 	</div>
 	<br>
 	<span style="margin-left: 5px;"><b>Pontos Registrados no Mês</b></span>
