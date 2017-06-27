@@ -8,7 +8,7 @@ class PontoService {
     Ponto criarPontoParaFuncionario(Date hora, Funcionario funcionario) {
         Ponto ultimoPonto = findUltimoPontoByFuncionario(funcionario)
         if(ultimoPonto?.getHorario() > hora){
-            throw new Exception("Erro ao cadastrar ponto!gitgit")
+            throw new Exception("Erro ao cadastrar ponto!")
         }else{
             return registrarPonto(hora, funcionario)
         }
